@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Cards - Amazon Clone</title>
+    <link rel="stylesheet" href="gift-cards.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header, footer {
+            background-color: #232f3e;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header a, footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        header a:hover, footer a:hover {
+            color: #febd69;
+        }
+
+        /* Main Content */
+        .gift-cards-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .gift-cards-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gift-cards-header h1 {
+            font-size: 28px;
+            margin: 0;
+            color: #232f3e;
+        }
+
+        .gift-cards-section {
+            margin-bottom: 30px;
+        }
+
+        .gift-cards-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #232f3e;
+        }
+
+        .gift-cards-section p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .gift-cards-section a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #232f3e;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .gift-cards-section a:hover {
+            background-color: #febd69;
+            color: #232f3e;
+        }
+
+        .gift-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .gift-card-item {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gift-card-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .gift-card-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .gift-card-item h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #232f3e;
+        }
+
+        .gift-card-item p {
+            font-size: 16px;
+            color: #b12704;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./alogo.png" alt="Amazon Logo" height="40"></a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="deals.html">Today's Deals</a>
+            <a href="customer-service.html">Customer Service</a>
+            <a href="gift-cards.html">Gift Cards</a>
+            <a href="#">Sell</a>
+        </nav>
+    </header>
+
+    <!-- Gift Cards Content -->
+    <main class="gift-cards-container">
+        <div class="gift-cards-header">
+            <h1>Gift Cards</h1>
+            <p>Find the perfect gift card for every occasion.</p>
+        </div>
+
+        <!-- Purchase Gift Cards -->
+        <section class="gift-cards-section">
+            <h2>Purchase Gift Cards</h2>
+            <p>Choose from a variety of designs and amounts.</p>
+            <div class="gift-cards-grid">
+                <!-- Example Gift Card 1 -->
+                <div class="gift-card-item">
+                    <img src="./g1.jpeg" alt="Gift Card 1">
+                    <h3>Amazon Birthday Gift Card</h3>
+                    <p>From $25</p>
+                    <a href="purchase-gift-card.html">Buy Now</a>
+                </div>
+
+                <!-- Example Gift Card 2 -->
+                <div class="gift-card-item">
+                    <img src="./g2.jpg" alt="Gift Card 2">
+                    <h3>Amazon Thank You Gift Card</h3>
+                    <p>From $25</p>
+                    <a href="purchase-gift-card.html">Buy Now</a>
+                </div>
+
+                <!-- Example Gift Card 3 -->
+                <div class="gift-card-item">
+                    <img src="./g3.jpeg" alt="Gift Card 3">
+                    <h3>Amazon Holiday Gift Card</h3>
+                    <p>From $25</p>
+                    <a href="purchase-gift-card.html">Buy Now</a>
+                </div>
+
+                <!-- Example Gift Card 4 -->
+                <div class="gift-card-item">
+                    <img src="./g4.jpg" alt="Gift Card 4">
+                    <h3>Amazon Anniversary Gift Card</h3>
+                    <p>From $25</p>
+                    <a href="purchase-gift-card.html">Buy Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Redeem Gift Cards -->
+        <section class="gift-cards-section">
+            <h2>Redeem a Gift Card</h2>
+            <p>Enter your gift card code to redeem your balance.</p>
+            <a href="redeem-gift-card.html">Redeem Now</a>
+        </section>
+
+        <!-- Check Balance -->
+        <section class="gift-cards-section">
+            <h2>Check Gift Card Balance</h2>
+            <p>Check the remaining balance on your gift card.</p>
+            <a href="check-balance.html">Check Balance</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+        <p>&copy; 2024 Amazon Clone. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

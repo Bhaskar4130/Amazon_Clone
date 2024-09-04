@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service - Amazon Clone</title>
+    <link rel="stylesheet" href="customer-service.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header, footer {
+            background-color: #232f3e;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header a, footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        header a:hover, footer a:hover {
+            color: #febd69;
+        }
+
+        /* Main Content */
+        .customer-service-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .service-header h1 {
+            font-size: 28px;
+            margin: 0;
+            color: #232f3e;
+        }
+
+        .service-search {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .service-search input {
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px 0 0 5px;
+            border: 1px solid #ddd;
+        }
+
+        .service-search button {
+            padding: 10px 20px;
+            background-color: #febd69;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            color: #232f3e;
+            transition: background-color 0.3s;
+        }
+
+        .service-search button:hover {
+            background-color: #f3a847;
+        }
+
+        .service-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .category-item {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .category-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .category-item h2 {
+            font-size: 18px;
+            margin: 15px 0;
+            color: #232f3e;
+        }
+
+        .category-item p {
+            color: #666;
+        }
+
+        .category-item a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #232f3e;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .category-item a:hover {
+            background-color: #febd69;
+            color: #232f3e;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./alogo.png" alt="Amazon Logo" height="40"></a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="deals.html">Today's Deals</a>
+            <a href="customer-service.html">Customer Service</a>
+            <a href="gift-cards.html">Gift Cards</a>
+            <a href="#">Sell</a>
+        </nav>
+    </header>
+
+    <!-- Customer Service Content -->
+    <main class="customer-service-container">
+        <div class="service-header">
+            <h1>Customer Service</h1>
+            <p>How can we help you today?</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="service-search">
+            <input type="text" placeholder="Search for help">
+            <button type="submit">Search</button>
+        </div>
+
+        <!-- Service Categories -->
+        <div class="service-categories">
+            <!-- Order Issues -->
+            <div class="category-item">
+                <h2>Order Issues</h2>
+                <p>Track your order, cancel items, or return an order.</p>
+                <a href="order-issues.html">Learn More</a>
+            </div>
+
+            <!-- Account Settings -->
+            <div class="category-item">
+                <h2>Account Settings</h2>
+                <p>Manage your account, update personal information, and more.</p>
+                <a href="account-settings.html">Learn More</a>
+            </div>
+
+            <!-- Payments and Billing -->
+            <div class="category-item">
+                <h2>Payments and Billing</h2>
+                <p>Update payment methods, view billing details, and more.</p>
+                <a href="payments-billing.html">Learn More</a>
+            </div>
+
+            <!-- Delivery Information -->
+            <div class="category-item">
+                <h2>Delivery Information</h2>
+                <p>Check delivery times, change addresses, and more.</p>
+                <a href="delivery-info.html">Learn More</a>
+            </div>
+
+            <!-- Product Support -->
+            <div class="category-item">
+                <h2>Product Support</h2>
+                <p>Get help with product issues, warranties, and more.</p>
+                <a href="product-support.html">Learn More</a>
+            </div>
+
+            <!-- Gift Cards and Promotions -->
+            <div class="category-item">
+                <h2>Gift Cards & Promotions</h2>
+                <p>Redeem gift cards, view balance, and check promotions.</p>
+                <a href="gift-cards-promotions.html">Learn More</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+        <p>&copy; 2024 Amazon Clone. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Deals - Amazon Clone</title>
+    <link rel="stylesheet" href="deals.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header, footer {
+            background-color: #232f3e;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header a, footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        header a:hover, footer a:hover {
+            color: #febd69;
+        }
+
+        /* Main Content */
+        .deals-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .deals-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .deals-header h1 {
+            font-size: 28px;
+            margin: 0;
+            color: #232f3e;
+        }
+
+        .deals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .deal-item {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            background-color: #f9f9f9;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .deal-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .deal-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .deal-item h2 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #232f3e;
+        }
+
+        .deal-item .price {
+            margin: 10px 0;
+        }
+
+        .deal-item .price .original-price {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .deal-item .price .discounted-price {
+            font-size: 18px;
+            color: #b12704;
+            font-weight: bold;
+        }
+
+        .deal-item button {
+            padding: 10px 20px;
+            background-color: #febd69;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #232f3e;
+            transition: background-color 0.3s;
+        }
+
+        .deal-item button:hover {
+            background-color: #f3a847;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./alogo.png" alt="Amazon Logo" height="40"></a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="deals.html">Today's Deals</a>
+            <a href="customer-service.html">Customer Service</a>
+            <a href="gift-cards.html">Gift Cards</a>
+            <a href="#">Sell</a>
+        </nav>
+    </header>
+
+    <!-- Deals Content -->
+    <main class="deals-container">
+        <div class="deals-header">
+            <h1>Today's Deals</h1>
+        </div>
+        <div class="deals-grid">
+            <!-- Deal Item 1 -->
+            <div class="deal-item">
+                <img src="./pants.jpeg" alt="Deal 1">
+                <h2>cargos</h2>
+                <div class="price">
+                    <span class="original-price">$49.99</span>
+                    <span class="discounted-price">$29.99</span>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Deal Item 2 -->
+            <div class="deal-item">
+                <img src="./Tshirts.jpeg" alt="Deal 2">
+                <h2>Tshirt</h2>
+                <div class="price">
+                    <span class="original-price">$59.99</span>
+                    <span class="discounted-price">$39.99</span>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Deal Item 3 -->
+            <div class="deal-item">
+                <img src="./serium.jpeg" alt="Deal 3">
+                <h2>serium</h2>
+                <div class="price">
+                    <span class="original-price">$79.99</span>
+                    <span class="discounted-price">$49.99</span>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Deal Item 4 -->
+            <div class="deal-item">
+                <img src="./mobile.jpeg" alt="Deal 4">
+                <h2>Realme</h2>
+                <div class="price">
+                    <span class="original-price">$99.99</span>
+                    <span class="discounted-price">$59.99</span>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Deal Item 5 -->
+            <div class="deal-item">
+                <img src="./laptop1.jpg" alt="Deal 5">
+                <h2>hp</h2>
+                <div class="price">
+                    <span class="original-price">$89.99</span>
+                    <span class="discounted-price">$69.99</span>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Deal Item 6 -->
+            <div class="deal-item">
+                <img src="./mirror.jpeg" alt="Deal 6">
+                <h2>Mirror</h2>
+                <div class="price">
+                    <span class="original-price">$119.99</span>
+                    <span class="discounted-price">$89.99</span>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+        <p>&copy; 2024 Amazon Clone. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
